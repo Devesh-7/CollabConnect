@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Auth</title>
+</head>
+<body>
+    <button class="login">Sign in with Microsoft</button>
+    <script>
+        const login=document.querySelector('.login');
+        login.addEventListener('click',()=>{
+            window.location.href='/auth/microsoft';
+        })
+    </script>
+</body>
+</html>

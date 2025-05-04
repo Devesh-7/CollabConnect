@@ -1,0 +1,165 @@
+/* src/Pages/Home.css */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  /* Keep font */
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* Main container for padding below navbar */
+.home-container {
+  padding: 2rem 3rem; /* Add overall padding */
+  max-width: 1600px; /* Optional: Limit max width */
+  margin: 0 auto; /* Center content */
+}
+
+/* --- Header Section (Welcome + Actions) --- */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 1rem; /* Space between items when wrapped */
+}
+
+.welcome-message {
+  color: #1f2937; /* Keeping dark text, looks okay */
+  /* ... rest ... */
+}
+.text-welcome {
+  font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0; /* Remove default margins */
+}
+
+.text-welcome .brand-name-inline {
+  color: #198754; /* Green */
+  font-weight: 600;
+}
+.home-actions {
+  display: flex;
+  flex-direction: column; /* Stack button groups */
+  align-items: flex-end; /* Align buttons to the right */
+  gap: 1rem; /* Space between Add Project and Toggle */
+}
+
+.add-project {
+  /* Removed large margins */
+  margin: 0;
+}
+.add-project a{
+  text-decoration: none;
+}
+.add-project-btn {
+  display: inline-flex; /* Align icon and text */
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #198754; /* Green */
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+.add-project-btn:hover {
+  background-color: #157347; /* Darker green */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Project Type Toggle --- */
+.project-type-toggle {
+  display: flex;
+  background-color: #e9ecef; /* Light grey background */
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: transparent;
+  color: #6c757d; /* Muted text color */
+  font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  margin: 0 2px; /* Slight space between buttons */
+}
+
+.toggle-button.active {
+  background-color: #ffffff; /* White background for active */
+  color: #198754; /* Green text for active */
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button:not(.active):hover {
+  background-color: #dee2e6; /* Slightly darker grey on hover */
+}
+
+
+/* --- Main Project Display Area --- */
+.project-display-area { /* Renamed from small-screen */
+  background-color: #ffffff; /* White background */
+  padding: 2rem;
+  margin-top: 1rem; /* Space below actions */
+  margin-bottom: 3rem; /* Space above footer */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  min-height: 40vh; /* Ensure it has some height even when empty */
+}
+
+/* --- Category Sections --- */
+.project-category-section { /* Renamed from carousal-space */
+  margin-bottom: 2.5rem; /* Space between categories */
+}
+
+.category_name {
+  color: #1f2937; /* Darker heading */
+  font-size: clamp(1.5rem, 3vw, 1.8rem); /* Responsive font size */
+  font-weight: 600;
+  margin-bottom: 0.5rem; /* Space below heading */
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #198754; /* Green underline */
+  display: inline-block; /* Make border only as wide as text */
+}
+
+/* REMOVED: .rule_r - using border-bottom on category_name instead */
+
+/* --- Project Card Grid --- */
+.projects-grid { /* Renamed from projects */
+  display: grid;
+  /* Responsive grid: creates columns ~300px wide, filling space */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem; /* Space between cards */
+  margin-top: 1.5rem; /* Space below category title */
+}
+
+.no-projects-message { /* Style for the "no projects" text */
+  color: #6c757d;
+  font-style: italic;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+
+/* --- Footer --- */
+.footer {
+  background-color: #f8f9fa; /* Light neutral grey */
+  color: #6c757d; /* Muted text */
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px; /* Optional rounded corners */
+  margin: 0 3rem 2rem 3rem; /* Match container horizontal padding */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05); /* Subtle top shadow */
+}

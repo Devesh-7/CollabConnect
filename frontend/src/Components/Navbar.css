@@ -1,0 +1,97 @@
+/* src/Components/Navbar.css */
+/* ... existing styles ... */
+
+.navbar {
+  /* CHANGED: Set background color */
+  background-color: #198754; /* Green background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 3rem; /* Adjusted padding */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add a subtle shadow */
+}
+
+.ellipse-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Add gap between logo elements */
+}
+.ellipse {
+  /* Keep blue or change to a contrasting color? Maybe white? */
+  background-color: #ffffff; /* White circle */
+  border: 2px solid #157347; /* Darker green border */
+  /* Removed shadow if background is dark */
+  /* ... rest of ellipse styles ... */
+  height: 2.5rem; /* Use rem */
+  width: 2.5rem;
+}
+.home-name-container {
+  /* Remove background, make text white */
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+.home-name{
+  font-size: 1.4rem; /* Use rem */
+  font-weight: 600;
+  color: #ffffff; /* White text on green */
+}
+
+.navbar-links {
+  /* ... existing styles ... */
+}
+
+.navbar-links div {
+  /* Remove individual backgrounds, use text styling */
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #e0f2e9; /* Light green tint / off-white for links */
+  font-weight: 500;
+  font-size: 0.95rem; /* Use rem */
+  padding: 0.5rem 0.8rem; /* Add padding for click area */
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active { /* Add active class handling if using NavLink */
+  text-decoration: none;
+  color: #ffffff; /* White on hover/active */
+  background-color: rgba(255, 255, 255, 0.15); /* Subtle background highlight */
+}
+
+.search-and-profile {
+  /* ... existing styles ... */
+}
+
+.profile-button {
+  /* ... existing styles ... */
+}
+.navbar-right-circle{
+  /* Keep neumorphic or simplify? */
+  /* Simple version: */
+  border-radius: 50%;
+  padding: 0;
+  width: 36px; /* Fixed size */
+  height: 36px;
+  box-shadow: none;
+  border: 2px solid #ffffff; /* White border */
+  overflow: hidden; /* Clip image */
+  background-color: #eee; /* Fallback bg */
+}
+.navbar-right-circle-img{
+  width: 100%; /* Make image fill circle */
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the area */
+}
+/* Remove wishlist/search button styles if they are not used */
+
+/* ... rest of Navbar.css ... */

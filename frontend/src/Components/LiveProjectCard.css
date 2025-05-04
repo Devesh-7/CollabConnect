@@ -1,0 +1,222 @@
+.upper_div_card{
+  display: flex;
+  flex-direction: row;
+  margin-left:0;
+  width:100%;
+  height:80%;
+  margin-bottom:0%;
+}
+.project_card_div{
+  position:relative;
+  border-radius: 15px;
+  
+  background-color: #fcfcfd;
+  box-shadow: 3px 3px 7.6px -3px rgba(0, 0, 0, 0.2) inset, -3px -3px 4px #fff,
+    -3px -4px 4px rgba(255, 255, 255, 0.5) inset,
+    4px 4px 7.3px rgba(0, 0, 0, 0.2);
+  width: 25vw;
+  height:20vw;
+  padding:1.3%;
+}
+
+.project_card_right_holder{
+  height:100%;
+  width: 70%;
+  margin-left: 30%;
+}
+
+.line_for_requirement{
+  border: 1px solid #0059cd;
+   width:93%;
+  margin-top:0.7vw;
+  margin-bottom: 0.3vw;
+ 
+}
+
+ .card_left_upper{
+  background-color: #0059cd;
+  box-shadow: 4px 4px 13.4px rgba(255, 255, 255, 0.36) inset,
+  -3px -4px 4px rgba(0, 0, 0, 0.25) inset, 4px 4px 7.3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width:24%;
+  border-radius: 15px;
+  height:65%;
+  object-fit: cover;
+}
+.project_short_form{
+  margin-top:5vh;
+  font-size: 6vw;
+  line-height: 106.25%;
+  font-weight: 500;
+  width:100%;
+  color: #fcfcfd;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3),
+    -2px -2px 3.4px rgba(0, 0, 0, 0.25);
+}
+
+.project_name {
+  position: relative;
+  margin-bottom: 0.6vw;
+  display: block;
+  color:#0059cd;
+  font-size:2.5vw;
+  height: 1.9vw;
+  min-height: 3vh;
+}
+.project_name_div {
+  margin: 0;
+  overflow: hidden;
+  margin-top:0;
+  margin-left:3%;
+  font-size: 1.7em;
+  line-height: 106.25%;
+  font-weight: 500;
+  width:67%;
+  height:4.7vw;
+  min-height: 8.4vh;
+  margin-bottom: 1vw;
+}
+.project_likebtn_div {
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  background-color:#fcfcfd;
+ 
+  box-shadow: -3px -4px 4px rgba(0, 0, 0, 0.25) inset,
+    4px 4px 7.3px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 4px 4px 13.4px rgba(255, 255, 255, 0.36) inset,
+    -3px -4px 4px rgba(0, 0, 0, 0.25) inset, 4px 4px 7.3px rgba(0, 0, 0, 0.2); */
+    width: 3vw;
+    height:3vw;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.card_bottom_div {
+  margin-top: 1%;
+  border-radius: 14px;
+  background-color: #e1e4e9;
+  /* box-shadow: 3px 3px 7.6px -3px rgba(0, 0, 0, 0.2) inset, -3px -3px 4px #fff,
+    -3px -4px 4px rgba(255, 255, 255, 0.5) inset,
+    4px 4px 7.3px rgba(0, 0, 0, 0.2); */
+  width: 100%;
+  height: 20%;
+  /* height: 44px; */
+}
+
+
+
+.project_view_btn{
+  margin-top: 1%;
+  float:right;
+  margin-right: 1%;
+  cursor: pointer;
+  width: 30%;
+  height:82%;
+  box-shadow: 4px 4px 13.4px rgba(255, 255, 255, 0.36) inset,
+    -3px -4px 4px rgba(0, 0, 0, 0.25) inset, 4px 4px 7.3px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    background-color: #0059cd;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+     font-size: inherit;
+    font-weight: 400;
+    color: #fff;
+}
+
+.iconmonstr-coin-1-240-1 {
+
+  border:1px solid white;
+  top: 190px;
+  left: 31px;
+  width: 11px;
+  height: 11px;
+}
+.credit_coin_symbol{
+  position:relative;
+  display: inline-block;
+  border:1px solid black;
+  width: 3%;
+  height: 30%;
+  margin-top: 4%;
+  margin-left: 3%;
+}
+.card_upper_left_holder{
+  width:30%;
+  height:70%;
+}
+.required_credits{
+  
+  display:inline-block;
+  margin-top: 1%;
+  margin-left: 1%;
+  color:#0059cd;
+  font-size:2.5vh;
+}
+.skills_name{
+  text-transform: capitalize;
+  font-weight: 300;
+  width:4vw;
+  font-size: 1.2vw;
+}
+.skills_requirement_word{
+  font-size: 1vw;
+  font-weight: 400;
+
+}
+.project_no_of_likes {
+  display: inline-block;
+  line-height: 106.25%;
+  font-size: 1.4vw;
+ font-weight:500;
+ margin-top:3%;
+  margin-left:7vw;
+  /* margin-right:2%; */
+  color: #0059cd;
+}
+
+.skills_required {
+  
+  line-height: 90.25%;
+  margin-left:3%;
+  color: #0059cd;
+  
+  margin-top:0vh;
+  
+}
+
+.top_right_div{
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  height:2.5vw;
+}
+.view{
+  margin-top:0.5vh;
+  font-size: 1.2vw;
+}
+/* .name_skill_holder{
+  margin-top:0vw;
+  height: 3vw;
+} */
+
+.heart{
+  
+  margin-top: 0.9vw;
+  margin-left: 0.6vw;
+  font-size:1.4vw;
+  color:red;
+  
+}
+.dot{
+  margin-left: 0.5vw;
+  color: red;
+  margin-top:0.5vw;  
+}
+.live_status{
+  color: red;
+  font-weight: 600;
+  font-size: 1.7vw;
+}

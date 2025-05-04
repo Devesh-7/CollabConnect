@@ -1,0 +1,171 @@
+.update-course-container {
+    margin: 5% 15% 5% 15%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-course-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+  }
+
+  .update_course_heading {
+    font-size: 2.6vw;
+  }
+  
+  .form-group {
+    margin-bottom: 4%;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 2.5%;
+    color: #333;
+    font-size: 2.2vw;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.6vw;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .error-message {
+    color: #dc3545;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .tag-field-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-remove-btn,
+  .skill-add-btn {
+    padding: 0.375rem 0.75rem;
+    margin-left: 0.5rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .skill-remove-btn:hover,
+  .skill-add-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .skill-remove-btn {
+    background-color: #dc3545;
+  }
+  
+  .skill-remove-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .submit-btn {
+    font-size: 2vw;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  .spacer {
+    flex: 1;
+  }
+
+  .popup {
+    position: fixed; /* Fixed position to stay in view */
+    top: 20%; /* Positioned towards the top of the screen */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning to truly center the div */
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 20px; /* Padding around the text */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Slight shadow for depth */
+    z-index: 1000; /* Ensure it sits above other content */
+    width: auto; /* Auto width based on content size */
+    max-width: 80%; /* Maximum width to ensure it doesn't overflow the viewport */
+    text-align: center; /* Center the text inside the popup */
+  }
+  
+  /* Optionally, add animations for fading in and out */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+  .popup {
+    animation: fadeIn 0.5s ease-out forwards; /* Fade in effect */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .update-course-container {
+      padding: 1rem;
+    }
+
+    .update_course_heading {
+      font-size: 3.8vw;
+    }
+
+  }
+  
+  @media (max-width: 576px) {
+    .update-course-container {
+      padding: 3vw;
+    }
+    
+    .update_course_heading {
+      font-size: 4.8vw;
+    }
+    
+    .form-label {
+      font-size: 4vw;
+    }
+  
+    .tag-field-group {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .skill-remove-btn,
+    .skill-add-btn {
+      width: 90%;
+      margin-top: 0.5rem;
+    }
+  }
+  

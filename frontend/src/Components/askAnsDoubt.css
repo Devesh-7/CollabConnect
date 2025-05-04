@@ -1,0 +1,50 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .search {
+    width: 96%;
+  }
+  
+  .search-bar {
+    font-size: 2vw;
+    width: 99%;
+    text-wrap: wrap;
+    padding: 2vw;
+    margin:.4vw;
+    border-radius: 1.5vw;
+    box-shadow: 0 .4vw .8vw rgba(0, 0, 0, 0.1);
+  }
+
+  .lower-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3vw;
+  }
+
+  .paperclip {
+    height: 3.5vw;
+  }
+
+  .submit {
+    width: 12vw;
+    height: 4vw;
+    border-radius: 1vw;
+    font-size: 1.7vw;
+    background-color: rgba(0, 89, 205, 1);
+    color: #fff;
+  }
+
+  .submit:hover{
+    width: 12vw;
+    height: 4vw;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    background-color: #fff;
+    color: rgba(0, 89, 205, 1);
+  }
+  
+  

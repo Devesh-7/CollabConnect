@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+build/
+**/build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+backend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Secret Keys - IMPORTANT! Ensure your actual key filename is listed
+key.json
+backend/key.json
+backend/firebase-adminsdk-key.json # Or whatever you named your NEW key
+
+# IDE / OS files
+.DS_Store
+.idea/
+*.suo
+*.user
+*.vscode/

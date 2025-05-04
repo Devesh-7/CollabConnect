@@ -1,0 +1,276 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.project_popoutbody {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  padding: 0% 2%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e1e4e9;
+}
+
+.project_pop_left {
+  width: 48%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.project_pop_profile {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  padding: 1% 1%;
+  margin-bottom: 1%;
+  justify-content: space-between;
+}
+
+.project_profile_tag {
+  width: 65%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6vw;
+  padding: 1.2% 4%;
+  border-radius: 1.5vw;
+  box-shadow: 3px 3px 7.6px -3px rgba(0, 0, 0, 0.2) inset, -3px -3px 4px #fff,
+    -3px -4px 4px rgba(255, 255, 255, 0.5) inset,
+    4px 4px 7.3px rgba(0, 0, 0, 0.2);
+}
+.project_pop_profileIcon {
+  width: 2.2vw;
+}
+
+.project_pop_likes {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project_pop_heartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5vw;
+  height: 2.5vw;
+  /* padding: 1.5%; */
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.project_pop_heart {
+  width: 2vw;
+}
+
+.project_pop_jv {
+  width: 100%;
+  height: 35%;
+  border: none;
+  border-radius: 3vw;
+  background-color: #0059cd;
+  margin-bottom: 1.4vw;
+
+  box-shadow: 3px 3px 7.6px -3px rgba(0, 0, 0, 0.2) inset, -3px -3px 4px #fff,
+    -3px -4px 4px rgba(255, 255, 255, 0.5) inset,
+    4px 4px 7.3px rgba(0, 0, 0, 0.2);
+}
+
+.project_pop_projectTitle {
+  color: #0059cd;
+  font-size: 2.5vw;
+  border-bottom: 2px solid #0059cd;
+  margin-bottom: 1.2vw;
+  padding-bottom: 1vw;
+
+}
+
+.project_pop_describe {
+  font-size: 1vw;
+  width: 100%;
+  height: fit-content;
+  color: #0059cd;
+}
+
+.project_pop_tags_contain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3%;
+}
+
+.project_pop_tags_text {
+  color: #878889;
+}
+
+.project_pop_individualTags {
+  padding: 0.5vw;
+  border: 0.2vw solid #0059cd;
+  background-color: #ffffff;
+  font-weight: 500;
+  border-radius: 1.2vw;
+  width: fit-content;
+  /* min-width: 5vw; */
+  display: flex;
+  justify-content: center;
+  color: #0059cd;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Fredoka", sans-serif;
+  margin-bottom: 0.2vw;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  font-size: 1vw;
+}
+
+.project_pop_joinbtn {
+  width: 100%;
+  color: #ffffff;
+  background-color: #0059cd;
+  font-size: 2.8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw 1vw;
+  margin: 1vw;
+  height: fit-content;
+  border: none;
+  outline: none;
+  box-shadow:4px 4px 7.300000190734863px 0px #00000033,
+      -3px -4px 4px 0px #FFFFFF80 inset,
+     -3px -3px 4px 0px #FFFFFF,
+     3px 3px 7.599999904632568px -3px #00000033 inset;
+}
+
+.project_pop_right {
+  width: 47%;
+  background-color: lightgrey;
+  height: 95%;
+  border-radius: 1.8vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  
+}
+
+.project_pop_reviewsHeading {
+  color: #0059cd;
+  text-align: right;
+  margin-right: 4%;
+  margin-top: 2%;
+  font-size: 2vw;
+}
+
+.project_pop_reviewContainer {
+  /* background-color: #ffffff; */
+  width: 100%;
+  margin: 2%;
+  height: 75%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+  overflow: scroll;
+}
+
+.project_pop_reviewContainer::-webkit-scrollbar {
+  width: 0;  /* Hide scrollbar */
+}
+
+.project_pop_singleReview {
+  width: 95%;
+  color: #0059cd;
+  background-color: #ffffff;
+  border: none;
+  font-size: 1vw;
+  border-radius: 1.2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 4%;
+  margin: 1.5% 0%;
+  box-shadow: 2px 2px 3px -3px rgba(0, 0, 0, 0.2) inset, -3px -3px 3px #fff,
+    -3px -4px 3px rgba(255, 255, 255, 0.5) inset,
+    4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.project_pop_reviewStars {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.8vw;
+  padding: 1% 0.5%;
+  width: 25%;
+  background-color: transparent;
+
+  box-shadow: 3px 3px 7.6px -3px rgba(0, 0, 0, 0.2) inset, -3px -3px 4px #fff,
+    -3px -4px 4px rgba(255, 255, 255, 0.5) inset,
+    4px 4px 7.3px rgba(0, 0, 0, 0.2);
+}
+
+.project_pop_addReview {
+  color: #0059cd;
+  background-color: #ffffff;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  width: 100%;
+  background: transparent;
+}
+
+.project_pop_inputReview {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0.8vw;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.star-img {
+  cursor: pointer;
+  margin-right: 5px;
+  /* Add other styles as needed, such as width or height to size the stars */
+}
+
+.submitReviewIcon {
+  cursor: pointer;
+  display: inline-block; /* Or however you want to position it */
+  margin-left: 10px;
+  /* Add other styles as needed, such as width or height to size the icon */
+}
+
+.project_pop_inputStars {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0% 1%;
+}
+
+.project__pop__btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1vw 1vw;
+  margin: 1.5vw auto;
+}
+
+.project_pop_likes{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

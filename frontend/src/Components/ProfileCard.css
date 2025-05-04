@@ -1,0 +1,230 @@
+/* src/Components/ProfileCard.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Add box-sizing */
+  font-family: "Fredoka", sans-serif; /* Consistent font */
+}
+
+.ProfileCardBox {
+  display: flex;
+  width: 60vw; /* Adjust width as needed */
+  max-width: 900px; /* Max width */
+  min-height: 450px; /* Min height */
+  height: auto; /* Allow height to adjust */
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.ProfileCard-leftPart {
+  width: 35%; /* Adjust width */
+  padding: 1.5rem; /* Use rem */
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e9ecef; /* Add separator */
+  background-color: #f8f9fa; /* Slightly off-white background */
+}
+
+.ProfileCard-rightPart {
+  width: 65%; /* Adjust width */
+  padding: 1.5rem; /* Use rem */
+  display: flex;
+  flex-direction: column;
+}
+
+.ProfileCard-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4rem; /* Adjust size */
+  font-weight: 600;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Make it square */
+  /* CHANGED: Blue to Green */
+  background-color: #198754; /* Green */
+  overflow: hidden;
+  border-radius: 50%; /* Make it circular */
+  margin-bottom: 1.5rem; /* Space below */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.ProfileCard-image {
+  /* Styles for actual image if you implement upload */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Removing the 'About Me' section for now, can be added back if needed */
+/* .ProfileCard-about-me-parent { ... } */
+
+.ProfileCard-tag_storer-parent {
+  border-radius: 8px;
+  background-color: #e9ecef; /* Lighter grey */
+  padding: 0.8rem;
+  margin-bottom: 1rem; /* Space below tags */
+  flex-grow: 1; /* Allow tags section to grow if space */
+  overflow-y: auto; /* Scroll if too many tags */
+  max-height: 150px; /* Limit height */
+}
+.ProfileCard-tag_storer-parent::-webkit-scrollbar {
+    width: 4px;
+}
+.ProfileCard-tag_storer-parent::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.ProfileCard-tag_storer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* Use gap for spacing */
+  align-items: center;
+}
+
+.ProfileCard-tag {
+  border-radius: 15px;
+  /* CHANGED: Border to Green */
+  border: 1px solid #198754; /* Green */
+  background-color: white;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.85rem; /* Use rem */
+  /* CHANGED: Text color to Green */
+  color: #198754; /* Green */
+  white-space: nowrap; /* Prevent wrapping within a tag */
+}
+
+.ProfileCard-link-container { /* Renamed for consistency */
+  border-radius: 8px;
+  /* CHANGED: Background to Green */
+  background-color: #198754; /* Green */
+  margin-top: 0.8rem; /* Space above links */
+  padding: 0.5rem 0.8rem;
+  transition: background-color 0.2s ease;
+}
+.ProfileCard-link-container:hover {
+  background-color: #157347; /* Darker Green */
+}
+
+.ProfileCard-link { /* Renamed for consistency */
+  display: block; /* Make link fill container */
+  font-size: 0.95rem; /* Use rem */
+  color: white;
+  text-decoration: none; /* Remove underline */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* --- Right Part --- */
+.ProfileCard-rightPart-upper-part {
+  padding-bottom: 1rem; /* Space below header */
+  border-bottom: 1px solid #e9ecef; /* Separator */
+  margin-bottom: 1rem; /* Space above project area */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items top */
+}
+
+.ProfileCard-rightPart-upper-part-name-side {
+  /* Container for name, edit icon, designation */
+}
+
+.ProfileCard-rightPart-upper-part-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between name and icon */
+  font-size: 1.75rem; /* Use rem */
+  font-weight: 600; /* Bolder */
+  color: #343a40; /* Dark grey */
+  margin-bottom: 0.25rem; /* Space below name */
+}
+
+.editProfileIcon {
+  width: 1.3rem; /* Adjust size */
+  height: 1.3rem;
+  cursor: pointer;
+  color: #6c757d; /* Muted color */
+  transition: color 0.2s ease;
+}
+.editProfileIcon:hover {
+  color: #198754; /* Green on hover */
+}
+
+.ProfileCard-rightPart-upper-part-post {
+  font-size: 0.95rem; /* Use rem */
+  color: #6c757d; /* Muted color */
+  font-style: italic;
+}
+
+.ProfileCard-rightPart-upper-part-credits-side {
+  display: flex;
+  align-items: center;
+  background-color: #e0f2e9; /* Light green background */
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px; /* Pill shape */
+  gap: 0.5rem;
+}
+.ProfileCard-rightPart-upper-part-credits-side img { /* Assuming dollarSVG */
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.ProfileCard-rightPart-upper-part-credits {
+  font-size: 1.1rem; /* Use rem */
+  font-weight: 600;
+  color: #198754; /* Green */
+}
+
+.ProfileCard-rightPart-project-space {
+  flex-grow: 1; /* Take remaining vertical space */
+  border-radius: 8px;
+  background-color: #f8f9fa; /* Light background for project area */
+  border: 1px solid #e9ecef;
+  padding: 1rem;
+  /* TODO: Add styles for actual project listings here */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #adb5bd; /* Placeholder text color */
+  font-style: italic;
+}
+.ProfileCard-rightPart-project-space::before { /* Placeholder content */
+  content: 'My Projects / Collaborations Area';
+}
+
+/* --- Popup Buttons --- */
+.profile-popup-actions {
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.profile-popup-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  background-color: #f8f9fa;
+  color: #495057;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.profile-popup-btn:hover {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+}
+.profile-popup-btn.logout {
+  background-color: #f8d7da; /* Light red */
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+.profile-popup-btn.logout:hover {
+  background-color: #f1b0b7;
+  border-color: #e18da0;
+}

@@ -1,0 +1,97 @@
+.DoubtMainDiv
+{
+    /* padding: 2vw, 2vw, 0, 2vw; */
+    padding-top: 2vw;
+    padding-bottom: 0;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    /* align-content: center; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.doubtsHeading
+{
+    color:rgba(0, 89, 205, 1);
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 5vw;
+    margin-left: 2vw;
+}
+.addAndSearch
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 3vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    align-items: center;
+}
+.searchDiv
+{
+    /* border: 1px grey solid; */
+    box-shadow: 3px 3px 7.6px -3px rgba(0, 0, 0, 0.2) inset, -3px -3px 4px #fff,
+    -3px -4px 4px rgba(255, 255, 255, 0.5) inset,
+    4px 4px 7.3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.7vw;
+    padding: 0.6vw;
+    margin-right: 2vw;
+    /* max-height: 2vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; 
+    margin-left: 0.1vw;
+    cursor: pointer;
+}
+.inputSearchbar
+{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fredoka', sans-serif;
+}
+.addDiv
+{
+    /* border: 1px grey solid; */
+    color:rgba(0, 89, 205, 1);
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.3vw;
+    display: flex;
+    align-content: center;
+    box-shadow: 3px 3px 7.6px -3px rgba(0, 0, 0, 0.2) inset, -3px -3px 4px #fff,
+    -3px -4px 4px rgba(255, 255, 255, 0.5) inset,
+    4px 4px 7.3px rgba(0, 0, 0, 0.2);
+    border-radius: 2vw;
+    padding: 1vw;
+    border: none;
+    cursor: pointer;
+}
+.searchImg
+{
+    width:1.5vw;
+    height: 1.5vw;
+}
+.addImg
+{
+    width:1.5vw;
+    height: 1.5vw;
+    border: none;
+
+}
+.DoubtsAnswersDiv
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputSearchbar
+{
+    height: 2.5vw;
+    background: transparent;
+    border: 1px solid rgb(167, 165, 165);
+    border-radius: 0.6vw;
+    width: 20vw;
+    margin-right: 0.2vw;
+}

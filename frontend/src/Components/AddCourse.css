@@ -1,0 +1,75 @@
+/* CSS FOR COURSE PAGE */
+
+.coursecard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .courseimage{
+    width: 30%;
+    height: 15vw;
+    background-color: white;
+    border: 2px solid #000;
+    border-color:blue;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+   border-radius: 1%;
+   margin-top: 2.5%;
+  }
+  .imageaddbtn{
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    
+  }
+  .title{
+    display: flex;
+    height: 4vw;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    gap: 2.5%;
+  }
+  .title_holder{
+    /* display: inline; */
+    background-color: rgba(241, 242, 244, 1);
+    border-radius: 5% ;
+    width: 20vw;
+    min-width: 13vw;
+  }
+  .title_asker{
+    /* display: inline; */
+    background-color: white;
+    border-radius: 5%;
+    width: 10vw;
+    min-width: 7vw;
+    background-color: white;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+  
+  }
+  .description{
+    display: flex;
+    height: 6vw;
+    gap: 1vw;
+    margin-bottom:1% ;
+  }
+  
+  .uploadbtn{
+    /* text-align: center;
+    align-items: center; */
+    width: 8vw;
+    background-color: blue;
+    text-decoration-style: dashed white;
+    border-radius: 6%;
+    height: 3.5vw;
+  }
+  
+  
+  .tags{
+    background-color: grey;
+    width: 10vmax;
+    height: 10vmax;
+  }

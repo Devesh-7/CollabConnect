@@ -1,0 +1,13 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    /* Keeping existing font */
+    font-family: 'Fredoka', sans-serif;
+}
+/* Add any global styles here, theme changes applied in specific component CSS */
+
+/* Ensure html, body take full height for background */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}

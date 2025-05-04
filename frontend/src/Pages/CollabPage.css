@@ -1,0 +1,191 @@
+body {
+  background-color: #c9cdd6;
+}
+.chatroom_holder {
+    height: 96vh;
+    width: 96vw;
+    border-radius: 2%;
+    /* background-color: #fcfcfd; */
+    /* background-color: red; */
+    /* background-color: rgba(239,244,255,0.418); */
+    padding: 0.1vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin: 2vh auto;
+    box-shadow: 4px 4px 7.300000190734863px 0px #00000033,
+      -3px -4px 4px 0px #ffffff80 inset, -3px -3px 4px 0px #ffffff,
+      3px 3px 7.599999904632568px -3px #00000033 inset;
+  }
+  .chatroom_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color:#ffffff;  */
+    background-color: rgba(239,244,255,0.418);
+    width: 28vw;
+    height: 95%;
+    border-radius: 4%;
+    padding: 0.2vw;
+    margin: 0 0.2vw;
+  }
+  .chatroom_right {
+    background-color: #e1e4e9;
+    width: 68vw;
+    border-radius: 2%;
+    height: 94%;
+    padding: 0.5vw;
+    box-shadow: -2px -2px 3.4000000953674316px 0px #00000040,
+      2px 2px 5px 0px #ffffff4d;
+  }
+
+  .main__chatlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .chatroom__left__header{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+    margin: 0vw auto 1vw;
+  }
+
+  .chat-heading{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .home{
+    border-radius: 50%;
+    box-shadow:4px 4px 7.300000190734863px 0px #00000033,
+      -3px -4px 4px 0px #FFFFFF80 inset,
+     -3px -3px 4px 0px #FFFFFF,
+     3px 3px 7.599999904632568px -3px #00000033 inset;
+     transition: all 0.3s cubic-bezier(0.88, 0.19, 0.37, 1.11);
+  }
+  .home:hover{
+    transform: scale(1.2);
+  }
+  .home>img{
+    width: 3vw;
+    height: 3vw;
+    cursor: pointer;
+    margin: auto;
+  }
+  .chatroom {
+    color: #0059cd;
+    font-weight: 700;
+    font-size: 2.7vw;
+    margin: 1vw 1.2vw;
+    overflow-wrap: break-word;
+    text-align: left;
+  }
+  .ruler {
+    margin: 1% auto 0;
+    width: 90%;
+    background-color: #0059cd;
+    height: 0.15vw;
+  }
+  .chatRoom_job_names {
+    /* background-color: orange; */
+    width: 25vw;
+    /* height: 85%; */
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3vh;
+    align-items: center;
+    overflow-y: scroll;
+  }
+  .chatRoom_job_names::-webkit-scrollbar {
+    width: 0;  /* Hide scrollbar */
+  }
+  .container_list_and_scroll{
+    overflow-y: auto;
+  }
+  
+  .jobname {
+    display: flex;
+    text-align: left;
+    align-items: center; 
+    width: 24vw;
+    height: 20vh;
+    padding: 1vh 1vw;
+    border-radius: 13px;
+    color: #0059cd;
+    font-size: 1.2vw;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    cursor: pointer;
+    /* box-shadow: 3px 3px 3px -3px rgba(0, 0, 0, 0.2) inset, -3px -3px 4px #fff,
+      -3px -4px 4px rgba(255, 255, 255, 0.5) inset,
+      4px 4px 7.3px rgba(0, 0, 0, 0.2); */
+      /* box-shadow: 3px 3px 7.6px -3px rgba(0, 0, 0, 0.2) inset, -3px -3px 4px #fff,
+    -3px -4px 4px rgba(255, 255, 255, 0.5) inset,
+    4px 4px 7.3px rgba(0,0,0,0.2); */
+  }
+  
+  .job{
+    width: 100%;
+    height: 5vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+  
+  .jobname .ruler{
+    margin: 2% 0;
+    width: 100%;
+    background-color: #0059cd;
+    height: 0.1vw;
+  }
+  .jobname.active {
+    background-color: #0059cd;
+    color: #fcfcfd;
+    box-shadow: 4px 4px 7.300000190734863px 0px #00000033,
+      -3px -4px 4px 0px #00000040 inset,
+      4px 4px 13.399999618530273px 0px #ffffff5c inset;
+  }
+  .jobname:hover {
+    background-color: #e6e9ed;
+    color: #0059cd;
+    box-shadow: 4px 4px 7.300000190734863px 0px #00000033,
+      -3px -4px 4px 0px #00000040 inset,
+      4px 4px 13.399999618530273px 0px #ffffff5c inset;
+  }
+  .scroll-button{
+    margin-top: auto; /* Push the button to the bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw; /* Adjust width as needed */
+    height: 2vh; /* Adjust height as needed */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.88, 0.19, 0.37, 1.11);
+  }
+  .scroll-button:hover {
+    transform: scale(1.2);
+  }
+  .scroll-button img{
+    width: 5vw;
+    height: 8vh;
+  }
+  @keyframes showIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
